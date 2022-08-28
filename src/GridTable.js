@@ -45,10 +45,10 @@ function GridTable() {
             </div>
             <div className='sub-main'>
                 <div className='search'><input placeholder='Filter Field' onChange={handleFilter} /></div>
+                    {/*it can be added more column and row in this dynamic table through backened, no need to
+                        change in User Interface */}
                 <table className='table-content'>
                     <thead>
-                        {/*it can added more column and row in this dynamic table through backened, no need to
-                        change in User Interface */}
                         <tr>
                             {header.map((head,i)=>{
                                 const objecKey = ["id","first_name","email","phone"];
